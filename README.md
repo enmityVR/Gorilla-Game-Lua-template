@@ -104,28 +104,28 @@ GetObjectPosition(name): Returns the world-space position of an object as a Vect
 ```
 
 ### Physics
-
+```
 GetObjectVelocity(name): Returns the world-space velocity of an object's Rigidbody as a Vector3. Returns nil if not found.
 
-
+```
 SetObjectKinematic(name, isKinematic): Sets the kinematic state of an object's Rigidbody.
 
-
+```
 SetObjectGravity(name, useGravity): Enables or disables gravity for an object's Rigidbody.
 
-
+```
 AddForceToObject(name, force, forceMode): Adds a force to an object's Rigidbody.
-
+```
 
     name (string): The name of the object.
-
+```
 
     force (Vector3): The force vector to apply.
 
-
+```
     forceMode (string, optional): The type of force to apply. Valid options: "force", "acceleration", "impulse", "velocitychange". Defaults to "force".
-
-
+```
+```
 ### Controller Input
 
 Input functions should be called within an update() function, which is executed by the game on every frame.
@@ -135,7 +135,7 @@ Input functions should be called within an update() function, which is executed 
 
     GetGripButtonDown(hand): Returns true for the single frame the grip button is pressed.
 ```
-
+```
 GetTriggerButtonDown(hand): Returns true for the single frame the trigger button is pressed.
 
 ```
