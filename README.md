@@ -24,7 +24,7 @@ The following sections detail all available functions and types for use in your 
 Core Types
 
     Vector3(x, y, z): Represents a point, direction, or scale in 3D space.
-[cite: 6]```
+```
 
 Color(r, g, b, a): Represents an RGBA color. All values are floats from 0.0 to 1.0.
 
@@ -35,18 +35,18 @@ Color(r, g, b, a): Represents an RGBA color. All values are floats from 0.0 to 1
 Utility Functions
 
     log(message): Prints a string message to the in-game computer console for debugging.
-[cite: 9]```
+```
 
 ### Object Manipulation
 
-These functions are for creating and interacting with game objects[cite: 10].
+These functions are for creating and interacting with game objects.
 
 CreatePrimitive(name, type, position, rotation, scale, color): Creates a basic primitive shape.
 
 ```
 
         name (string): A unique identifier for the object.
-[cite: 12]```
+```
 
     type (string): The shape type.
 
@@ -55,36 +55,36 @@ CreatePrimitive(name, type, position, rotation, scale, color): Creates a basic p
 ```
 
         position (Vector3): The world-space position.
-[cite: 15]```
+```
 
     rotation (Vector3, optional): The rotation in Euler angles.
 
 ```
 
         scale (Vector3, optional): The local scale.
-[cite: 17]```
+```
 
     color (Color, optional): The material color.
 
 ```
 
     MoveObject(name, targetPosition, targetRotation, duration): Smoothly interpolates an object's position and rotation.
-[cite: 19]```
+```
 
     name (string): The name of the object to move.
 
 ```
 
         targetPosition (Vector3): The destination position.
-[cite: 21]```
+```
 
     targetRotation (Vector3, optional): The destination rotation.
 
 ```
 
         duration (number): The time in seconds for the move to complete.
-[cite: 23] A duration of 0 will teleport the object instantly.
-[cite: 23]```
+ A duration of 0 will teleport the object instantly.
+```
 
 DestroyObject(name): Destroys an object previously created by a script.
 
@@ -93,15 +93,15 @@ DestroyObject(name): Destroys an object previously created by a script.
 ```
 
     SetObjectActive(name, isActive): Sets the active state of an object, effectively showing (true) or hiding (false) it.
-[cite: 25]```
+```
 
 GetObjectPosition(name): Returns the world-space position of an object as a Vector3. Returns nil if not found.
 
 ```
 
     GetObjectRotation(name): Returns the world-space rotation of an object as a Vector3 in Euler angles.
-[cite: 27] Returns nil if not found.
-[cite: 27]```
+ Returns nil if not found.
+```
 
 ### Physics
 
@@ -134,50 +134,50 @@ Input functions should be called within an update() function, which is executed 
 ```
 
     GetGripButtonDown(hand): Returns true for the single frame the grip button is pressed.
-[cite: 30]```
+```
 
 GetTriggerButtonDown(hand): Returns true for the single frame the trigger button is pressed.
 
 ```
 
     GetPrimaryButtonDown(hand): Returns true for the single frame the Primary (A/X) button is pressed.
-[cite: 32]```
+```
 
 GetSecondaryButtonDown(hand): Returns true for the single frame the Secondary (B/Y) button is pressed.
 
 ```
 
     GetThumbStickButtonDown(hand): Returns true for the single frame the thumbstick is clicked down.
-[cite: 34]```
+```
 
 GetMenuButtonDown(hand): Returns true for the single frame the menu button is pressed.
 
 ```
 
     GetTriggerButtonTouched(hand): Returns true if the user's finger is resting on the trigger.
-[cite: 36]```
+```
 
 GetPrimaryButtonTouched(hand): Returns true if the user's finger is resting on the Primary button.
 
 ```
 
     GetSecondaryButtonTouched(hand): Returns true if the user's finger is resting on the Secondary button.
-[cite: 38]```
+```
 
 GetThumbStickButtonTouched(hand): Returns true if the user's finger is resting on the thumbstick.
 
 ```
 
     GetGripButtonFloat(hand): Returns the grip pressure as a float from 0.0 to 1.0.
-[cite: 40]```
+```
 
 GetTriggerButtonFloat(hand): Returns the trigger pressure as a float from 0.0 to 1.0.
 
 ```
 
     GetThumbStick2DAxis(hand): Returns a Vector2 representing the joystick's current position.
-[cite: 42] The x and y values range from -1.0 to 1.0.
-[cite: 43]```
+ The x and y values range from -1.0 to 1.0.
+```
 
 ### Player and Controller Information
 
@@ -186,22 +186,22 @@ GetControllerPosition(hand): Returns the Vector3 world position of the specified
 ```
 
     GetControllerRotation(hand): Returns the Vector3 world rotation of the specified controller in Euler angles.
-[cite: 45]```
+```
 
 GetControllerVelocity(hand): Returns the Vector3 velocity of the specified controller.
 
 ```
 
     GetControllerDirection(hand, direction): Returns a normalized Vector3 direction vector relative to the controller.
-[cite: 47] The direction parameter can be "forward", "up", or "right".
-[cite: 47]```
+ The direction parameter can be "forward", "up", or "right".
+```
 
 SetPlayerVelocity(velocity): Sets the player's Rigidbody velocity directly.
 
 ```
 
     VibrateController(hand, amplitude, duration): Triggers a haptic feedback event.
-[cite: 49]```
+```
 
     amplitude (number): The vibration intensity, from 0.0 to 1.0.
 
