@@ -61,6 +61,14 @@ Text Display:
 
     UpdateTextMeshPro(name, [text], [color], [fontSize]): Modifies an existing text object.
 
+Audio:
+
+    PlayAudio(name): Plays the audio on the named object.
+
+    StopAudio(name): Stops the audio on the named object.
+
+    SetAudioLoop(name, loop): Sets the audio on the named object to loop (true or false).
+
 Physics:
 
     AddForceToObject(name, force, [forceMode]): Applies a force. forceMode can be "force", "acceleration", "impulse", "velocitychange".
