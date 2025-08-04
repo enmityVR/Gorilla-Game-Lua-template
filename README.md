@@ -66,7 +66,7 @@ GetObjectVelocity(name): Returns the world-space velocity of an object's Rigidbo
 SetObjectGravity(name, useGravity): Enables or disables gravity for an object's Rigidbody.AddForceToObject(name, force, forceMode): Adds a force to an object's Rigidbody.
 name (string): The name of the object.
 
-    force (Vector3): The force vector to apply.
+  force (Vector3): The force vector to apply.
 
 forceMode (string, optional): The type of force to apply. Valid options: "force", "acceleration", "impulse", "velocitychange". Defaults to "force".
 
